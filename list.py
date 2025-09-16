@@ -1,4 +1,4 @@
-# === Using List ===
+#List
 
 r = int(input("Enter row: "))
 c = int(input("Enter col: "))
@@ -17,7 +17,9 @@ x = float(input("\nSearch: "))
 
 print("\nThe numbers are:")
 for row in arr:
-    print(" ".join(map(str, row)))
+    for val in row:
+        print(val, end=" ")
+    print()  
 
 pos = []
 for i in range(r):
